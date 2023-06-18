@@ -12,6 +12,8 @@
   --surface-color-hover: #ffffff0d;
   --highlight-color: #ffffff33;
   --switch-bg-url: #ffffff url(../assets/moon-stars.svg) no-repeat center;
+  --scrollbar-track: #ecd7f4;
+  --scrollbar-thumb: #ce9ce5;
 }
 
 .light{
@@ -22,6 +24,20 @@
   --surface-color-hover: #ffffff05;
   --highlight-color: #0000001a;
   --switch-bg-url: #ffffff url(../assets/sun.svg) no-repeat center;
+  --scrollbar-track: #1e263a;
+  --scrollbar-thumb: #672b6e;
+}
+
+::-webkit-scrollbar{
+  width: .6rem;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--scrollbar-thumb);
 }
 
 body {
