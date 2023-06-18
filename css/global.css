@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #ffffff;
+  --bg-url: url(../assets/bg-mobile.jpg);
+  --stroke-color: #ffffff80;
+  --surface-color: #ffffff1a;
+  --surface-color-hover: #ffffff0d;
+  --highlight-color: #ffffff33;
+  --switch-bg-url: #ffffff url(../assets/moon-stars.svg) no-repeat center;
+  --scrollbar-track: #ecd7f4;
+  --scrollbar-thumb: #ce9ce5;
+}
+
+.light {
+  --text-color: #000000;
+  --bg-url: url(../assets/bg-mobile-light.jpg);
+  --stroke-color: #00000080;
+  --surface-color: #0000000d;
+  --surface-color-hover: #ffffff05;
+  --highlight-color: #0000001a;
+  --switch-bg-url: #ffffff url(../assets/sun.svg) no-repeat center;
+  --scrollbar-track: #1e263a;
+  --scrollbar-thumb: #672b6e;
+}
+
+::-webkit-scrollbar {
+  width: .6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
