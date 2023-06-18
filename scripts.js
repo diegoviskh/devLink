@@ -7,9 +7,9 @@ function toggleMode(){
 
     if(html.classList.contains('light')){
         img.setAttribute("src", "./assets/avatar-light.png")
-        img.setAttribute("alt", "Diego com óculos")
+        img.setAttribute("alt", "Takagi")
     } else{
         img.setAttribute("src", "./assets/avatar.png")
-        img.setAttribute("alt", "Diego sem óculos")
+        img.setAttribute("alt", "Nishikata")
     }
 }
